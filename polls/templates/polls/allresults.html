@@ -1,0 +1,39 @@
+{% extends 'polls/base.html' %}
+
+{% block polls_content %}
+
+<title>Nicobar Poll</title>
+
+
+
+	<script type="text/javascript">
+		window.onload = function () {
+        setTimeout("location.reload(true);", 30000);
+        {% for poll in polls %}
+			var chart_{{ poll.id }} = new CanvasJS.Chart("chartContainer_{{ poll.id }}", {
+				title: {
+					text: "{{ poll.question }}"
+				},
+				dataPointWidth: 60,
+				data: [{
+					type: "column",
+					indexLabelLineThickness: 2,
+                    dataPoints: [{% for choice in poll.choice_set.all %}
+                        {label: "{{ choice.choice_text }}", y: {{ choice.votes }}},
+                        {% endfor %}]
+
+				}]
+			});
+			chart_{{ poll.id }}.render();
+        {% endfor %}
+		}
+	</script>
+    {% for poll in polls %}
+    <div id="chartContainer_{{ poll.id }}" style="height: 300px; width: 40%; display: inline-block"></div>
+    {% endfor %}
+<script src="/static/canvasjs.min.js"></script>
+
+
+
+
+{% endblock %}
