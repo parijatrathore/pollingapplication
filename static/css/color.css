@@ -1,0 +1,661 @@
+body {
+    color: #282b30;
+}
+
+a {
+    color: #282b30;
+}
+
+a, a:focus, a:active, a:hover {
+    color: #282b30;
+}
+
+/*  =========================================  START CODE FOR SHOP NAVIGATION STYLE HERE  ==========================  */
+.light-gray-bg {
+    background: #f9f9f6;
+}
+
+.trans-white {
+    border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+}
+
+.trans-white:hover {
+    color: #282b30;
+    background: #fff;
+}
+
+.white-bg {
+    border: 1px solid #282b30;
+    background: transparent;
+    color: #282b30;
+}
+
+.white-bg:hover {
+    background: #282b30;
+    color: #fff;
+}
+
+.slate-trans-bg {
+    background: rgba(25, 27, 31, 0.5);
+}
+
+.store-locator-home .slate-trans-bg {
+    color: #fff;
+    transition: all 0.3s ease;
+    -webkit-transition:all 0.3s ease;
+}
+
+.top-bar {
+
+}
+
+.top-bar:hover {
+   /* background: #fff;*/
+}
+
+.change-nav {
+    background: #fff;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+}
+
+.nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
+    background: none;
+}
+
+.navbar-nav > li > a {
+    color: #fff;
+}
+
+.navbar-nav > li > a:hover {
+    background: none;
+}
+
+.site-nav:hover {
+    background: #fff !important;
+}
+
+.header-freez .site-nav a, .site-nav:hover a {
+    color: #4e5f66 !important;
+}
+
+/*  =========================================  END CODE FOR SHOP NAVIGATION STYLE HERE  ============================  */
+/*  =========================================  START CODE FOR HEADER STYLE HERE  ===================================  */
+.nav-wrap a {
+    color: #797a82;
+}
+
+.nav-wrap a:hover {
+    color: #41424f;
+}
+
+.nav-panel {
+    background: rgba(253, 251, 248, 0.9);
+}
+
+.nav-panel li a {
+    color: #41424f;
+}
+
+.nav-panel li a:hover {
+    background: rgba(253, 251, 248, 0.5);
+}
+
+.nav-panel .dropdown-menu {
+    background: rgba(253, 251, 248, 0.9);
+}
+
+.nav-panel .dropdown-menu a {
+    color: #41424f;
+}
+
+.top-nav-box {
+    background: #353339;
+}
+
+.add-to-wishlist-box, .add-to-cart-box {
+    background: rgba(175, 178, 182, 0.7);
+}
+
+.top-nav-box.my-account {
+    background: #fff;
+}
+
+.my-account-links a {
+    color: #afb2b6;
+}
+
+.cart-info-disp {
+    background: rgba(67, 66, 70, 0.5);
+}
+
+.cart-btn-disp {
+    background: rgba(67, 66, 70, 0.85);
+}
+
+.cart-btn-disp:hover {
+    background: rgba(67, 66, 70, 1);
+}
+
+.top-bar-cart-text {
+    color: #ffffff;
+}
+
+.top-bar-total-cart-text {
+    color: #fff;
+}
+
+a.top-bar-checkout-btn span {
+    color: #fff !important;
+}
+
+.list-wrap-items {
+    background: #fff;
+}
+
+.icon-left-nav-arrow {
+    background: url('../img/icon-middle-left-arrow-white.png') no-repeat center !important;
+}
+
+.icon-right-nav-arrow {
+    background: url('../img/icon-middle-right-arrow-white.png') no-repeat center !important;;
+}
+
+.icon-close-mini-box {
+    background-image: url('../img/icon-close-small.png');
+}
+
+.icon-wishlist-mini-box {
+    background-image: url('../img/icon-wishlist-minicart.png');
+}
+
+.icon-kart-mini-box {
+    background-image: url('../img/icon-cart-miniwishlist.png');
+}
+
+.icon-wishlist-mini-box.active {
+    background-image: url('../img/icon-wishlist-active.png');
+}
+
+.icon-close {
+    background-image: url('../img/icon-close-white.png');
+}
+
+.search-head-text {
+    color: #fff;
+}
+
+.search-box-wrap {
+    border-bottom: 2px solid #fff;
+}
+
+.search-box-wrap input[type=text] {
+    color: #fff;
+    background: none;
+    /*background: url('../img/icon-search-white.png') no-repeat 97% center;*/
+}
+
+.type-n-search::-webkit-input-placeholder {
+    color: #fff;
+}
+
+.type-n-search:-moz-placeholder {
+    color: #fff;
+    opacity: 1;
+}
+
+.type-n-search::-moz-placeholder {
+    color: #fff;
+    opacity: 1;
+}
+
+.type-n-search:-ms-input-placeholder {
+    color: #fff;
+}
+
+.typeahead.dropdown-menu li a {
+    color: #636369;
+}
+
+.typeahead.dropdown-menu li.active a {
+    background: none;
+}
+
+.typeahead.dropdown-menu li a:hover, .typeahead.dropdown-menu li.active a:hover {
+    background: none;
+    color: #ffffff;
+}
+
+.inr-nav .dropdown-menu {
+    background: #fff;
+}
+
+.inr-nav a, .inr-nav .dropdown-menu a {
+    color: #797a82;
+}
+
+.inr-nav a:hover, .inr-nav .dropdown-menu a:hover {
+    background: none;
+    color: #41424f;
+}
+
+.top-right-nav a {
+    color: #797a82;
+    cursor: pointer;
+}
+
+.top-right-nav a:hover {
+    color: #41424f;
+}
+
+.top-right-nav .dropdown.open .top-nav-icon:after {
+    border: 6px solid transparent;
+    border-top: 6px solid #fff;
+}
+.top-bar-total-cart-text a, .top-bar-total-cart-text a:hover{
+    color:#fff;
+}
+.top-bar-total-cart-text a:hover:after{
+    border-bottom: 1px solid #fff;
+}
+
+.main-top-menu > li > a {
+    color: #797a82;
+}
+
+.main-top-menu > li > a:hover {
+    color: #282b30;
+}
+
+.main-top-menu > .dropdown.open > a {
+    color: #41424f !important;
+}
+
+.main-top-menu > .dropdown.open > a:after {
+    border-bottom: 1px solid #41424f;
+}
+
+.dropdown-submenu:hover > a:after {
+    border-left-color: #555;
+}
+
+.hr-nav {
+    background: rgba(253, 251, 248, 1);
+}
+
+.hr-nav > li > a {
+    color: #797a82;
+}
+
+.hr-nav > li > a:hover {
+    color: #282b30;
+    background: rgba(253, 251, 248, 1);
+}
+
+.hr-nav .dropdown-submenu.open .dropdown-toggle {
+    background: rgba(253, 251, 248, 0.5);
+}
+
+.dropdown-menu.vr-menu {
+    background: rgba(253, 251, 248, 0.9);
+
+}
+
+.vr-menu > li > a {
+    color: #41424f;
+}
+
+.navbar-hamburger {
+    background-image: url('../img/icon-hamburger.png');
+}
+
+.navbar-hamburger.active {
+    background-image: url('../img/icon-close-small.png');
+}
+
+.icon-cart {
+    background-image: url('../img/icon-cart-off.png');
+}
+
+.icon-cart:hover {
+    background-image: url('../img/icon-cart-on.png');
+}
+
+.icon-search {
+    background-image: url('../img/icon-search-off.png');
+}
+
+.icon-search:hover {
+    background-image: url('../img/icon-search-on.png');
+}
+
+.icon-wishlist {
+    background-image: url('../img/icon-heart-off.png');
+}
+
+.icon-wishlist:hover {
+    background-image: url('../img/icon-heart-on.png');
+}
+
+.icon-profile {
+    background-image: url('../img/icon-profile-off.png');
+}
+
+.icon-profile:hover {
+    background-image: url('../img/icon-profile-on.png');
+}
+
+.social-share-nav {
+    background-image: url('../img/icon-share.png');
+}
+
+.icon-top-mail {
+    background-image: url('../img/icon-mail-white.png');
+}
+
+.icon-top-facebook {
+    background-image: url('../img/icon-facebook-white.png');
+}
+
+.icon-top-twitter {
+    background-image: url('../img/icon-twitter-white.png');
+}
+
+.icon-top-pinterest {
+    background-image: url('../img/icon-pinterest-white.png');
+}
+
+.icon-top-youtube {
+    background-image: url('../img/icon-youtube-white.png');
+}
+
+.page-scroll-down-arrow {
+    background-image: url("../img/icon-down-white.png");
+}
+
+.page-scroll-up-arrow {
+    background-image: url("../img/icon-up-grey.png");
+}
+
+/*  =========================================  END CODE FOR HEADER STYLE HERE  =====================================  */
+/*  =============================================  START CODE FOR PARALLAX STYLE HERE  =============================  */
+.hero-top-banner {
+    background: url(../img/home-page-banner-hero.jpg) no-repeat center top fixed;
+    background-size: 100%;
+}
+
+.miop-banner-content {
+    /*background: url(../img/miop-banner.jpg) no-repeat center top fixed;
+    background-size: cover;*/
+}
+
+.store-locator-home {
+    /*background: url(../img/store-locator-bg.jpg) no-repeat center top fixed;
+    background-size: cover;*/
+}
+
+.white-text-block {
+    color: #fff;
+}
+
+/*  =============================================  END CODE FOR PARALLAX STYLE HERE  ===============================  */
+.bigRoundNext, .bigRoundPrev {
+    background: rgba(181, 180, 179, 0.6);
+    background-image: none;
+    color: #fff;
+}
+
+.swiper-pagination-bullet {
+    background: #d5d6d9;
+}
+
+.swiper-pagination-bullet-active {
+    background: #747881;
+}
+
+/*  =============================================  START CODE FOR FOOTER STYLE HERE  ===============================  */
+/*  =============================================  START CODE FOR STATIC PAGE HERE  ================================  */
+.page-highlight-text {
+    background: url('../../static/img/chevron-mask.png') no-repeat center top;
+}
+
+.static-page-top-banner .fade-bg {
+    /*background: rgba(40, 43, 47, 0.6);*/
+}
+
+.tandc-page {
+    background: url('../../static/img/banner-tandc.jpg') no-repeat top center fixed;
+}
+
+.contact-us-page {
+    background: url('../../static/img/banner-contact.jpg') no-repeat top center fixed;
+}
+
+.career-page {
+    background: url('../../static/img/jointeam-banner.jpg') no-repeat center top fixed;
+    background-size: 100%;
+}
+
+.carrer-detail-page {
+    background: url('../../static/img/careers_graphic-designer.jpg') no-repeat top center fixed;
+}
+
+.gift-card-page {
+    background: url('../../static/img/giftcard-banner.jpg') no-repeat top center fixed;
+}
+
+/*.philosophy-page {
+    background: url('../../static/img/giftcard-banner.jpg') no-repeat top center fixed;
+}*/
+
+.shipping-return-page {
+    background: url('../../static/img/banner-contact.jpg') no-repeat top center fixed;
+}
+
+.shipping-contact-page {
+    background: url('../../static/img/banner-contact.jpg') no-repeat top center fixed;
+}
+.team-member-bg{
+      background: url('../../static/img/team-member-bg.jpg') no-repeat fixed;
+    background-size: cover;
+    clear: both;
+}
+
+.static-page-top-banner h1 {
+    color: #fff;
+}
+
+.static-page-content {
+    font-size: 12px;
+    color: #282b30;
+}
+
+.static-page-content h4 {
+    color: #282b30;
+}
+
+.contact-us-form input, .contact-us-form textarea, .gift-card-form input, .gift-card-form textarea {
+    background: #f9f9f6;
+    resize: none;
+}
+
+.carrer-detail input[type="checkbox"], .gift-card-form input[type="checkbox"] {
+    background: #fff;
+    position: relative;
+    -webkit-appearance: none;
+    height: 25px !important;
+    border-radius: 100px;
+    width: 25px !important;
+    margin-right: 5px;
+    vertical-align: top;
+    webkit-transition: border-color 0.2s;
+    transition: border-color 0.2s;
+    border: 1px solid #231f20;
+    padding: 0px;
+    margin-top: 9px;
+}
+
+.carrer-detail input[type="checkbox"]:checked:before, .gift-card-form input[type="checkbox"]:checked:before {
+    content: "\f00c";
+    font-family: FontAwesome;
+    position: absolute;
+    font-size: 12px;
+    text-align: center;
+    width: 25px;
+    color: #fff;
+    top: -1px;
+    padding-top: 7px;
+    left: -1px;
+    background: #231f20;
+    height: 25px !important;
+    border-radius: 100px;
+    width: 25px !important;
+}
+
+.btn.cuf-send {
+    background: #282b30;
+    color: #fff;
+}
+
+::-webkit-input-placeholder, .form-control::-webkit-input-placeholder {
+    color: #9a9a9a;
+}
+
+::-moz-placeholder, .form-control::-moz-placeholder {
+    color: #9a9a9a;
+}
+
+:-ms-input-placeholder, .form-control:-ms-input-placeholder {
+    color: #9a9a9a;
+}
+
+:-moz-placeholder, .form-control:-moz-placeholder {
+    color: #9a9a9a;
+}
+
+/*  =============================================  END CODE FOR STATIC PAGE HERE  ==================================  */
+/*  =============================================  START CODE FOR CATEGORY LANDING PAGE HERE  ==================================  */
+
+/*  ==================================== END CODE FOR CATEGORY LANDING PAGE =====================================  */
+/*  ====================================  START CODE FOR PRODUCTS LISTING PAGE =====================================  */
+.category-mask-womens-wear {
+    background: url('../../static/img/category-mask-womens-wear.png') no-repeat center;
+}
+
+.icon-price-up {
+    background-image: url('../img/icon-price-up-on.png');
+}
+
+.icon-price-down {
+    background-image: url('../img/icon-price-down-on.png');
+}
+
+.icon-three-view {
+    background-image: url('../img/icon-three-view-on.png');
+}
+
+.icon-six-view {
+    background-image: url('../img/icon-six-view-on.png');
+}
+
+.icon-filter {
+    background-image: url('../img/icon-filter.png');
+}
+
+.icon-kart-mini-box {
+    background-image: url('../img/icon-cart-miniwishlist.png');
+}
+
+.icon-kart-plp {
+    background-image: url('../img/icon-cart-circle-white.png');
+}
+
+.icon-wishlist-plp {
+    background-image: url('../img/icon-wishlist-circle-white.png');
+    background-size: 86%;
+}
+.icon-wishlist-plp.selected {
+    background-image: url('../img/icon-wishlist-active.png');
+}
+
+.icon-wishlist-plp-qv {
+    background-image: url('../img/icon-wishlist-empty.png');
+    background-size: 86%;
+}
+.icon-wishlist-plp-qv-selected {
+    background-image: url('../img/icon-wishlist-fill.png');
+    background-size: 86%;
+}
+.prev-modal {
+    background-image: url('../img/arrow-left-white.png');
+}
+
+.next-modal {
+    background-image: url('../img/arrow-right-white.png');
+}
+
+/*.philosophy-page {
+    background: url('../../static/img/philosophy-bg.jpg') no-repeat top center fixed;
+}*/
+/*  ====================================  END CODE FOR PRODUCTS LISTING PAGE =======================================  */
+
+.icon-phone {
+    background-image: url('../img/icon-phone.png');
+}
+
+.icon-chat {
+    background-image: url('../img/icon-chat.png');
+}
+
+.icon-mail {
+    background-image: url('../img/icon-mail.png');
+}
+
+.icon-mail2 {
+    background-image: url('../img/icon-mail_2.png');
+}
+
+.icon-facebook {
+    background-image: url('../img/icon-facebook.png');
+}
+
+.icon-instagram {
+    background-image: url('../img/icon-instagram.png');
+}
+
+.icon-twitter {
+    background-image: url('../img/icon-twitter.png');
+}
+
+.icon-pinterest {
+    background-image: url('../img/icon-pinterest.png');
+}
+
+.icon-youtube {
+    background-image: url('../img/icon-youtube.png');
+}
+
+.subscribe-me {
+    border-color: #41424f;
+}
+
+.subscribe-me input[type=email] {
+    background: none;
+}
+
+.btn-subscribe-submit {
+    background: url('../img/right-circle-arrow.png') no-repeat center !important;
+    background-size: 50% !important;
+}
+
+footer {
+    background: #dedcd7;
+    color: #313135;
+}
+
+footer a, a:hover, footer a:focus {
+    color: #313135;
+}
+
+/*  =============================================  END CODE FOR FOOTER STYLE HERE  =================================  */

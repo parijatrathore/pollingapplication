@@ -2,37 +2,94 @@
 
 {% block polls_content %}
 
-<title>Nicobar Poll</title>
+    <title>Nicobar Poll</title>
 
 
 
-	<script type="text/javascript">
-		window.onload = function () {
-        setTimeout("location.reload(true);", 30000);
-        {% for poll in polls %}
-			var chart_{{ poll.id }} = new CanvasJS.Chart("chartContainer_{{ poll.id }}", {
-				title: {
-					text: "{{ poll.question }}"
-				},
-				dataPointWidth: 60,
-				data: [{
-					type: "column",
-					indexLabelLineThickness: 2,
-                    dataPoints: [{% for choice in poll.choice_set.all %}
-                        {label: "{{ choice.choice_text }}", y: {{ choice.votes }}},
-                        {% endfor %}]
+    <script type="text/javascript">
+        window.onload = function () {
+            setTimeout("location.reload(true);", 30000);
+            {% for obj in polls %}
 
-				}]
-			});
-			chart_{{ poll.id }}.render();
+                var choices = [{% for choice in obj.choices %}
+                                        {% if forloop.counter < 11 %}
+                                            {label: "{{ choice.choice_text }}", y: {{ choice.votes }}, index: {{ forloop.counter }}},
+                                        {% endif %}
+                                    {% endfor %}];
+                var chart_{{ obj.poll.id }} = new CanvasJS.Chart("chartContainer_{{ obj.poll.id }}", {
+
+                    dataPointWidth: 60,
+                    axisX: {
+                            interval: 1,
+                            intervalType: "number",
+                            minimum: -1,
+                            labelFormatter: function ( e ) {
+                                   var obj = choices.filter(function(v){
+                                       return v.index == (e.value + 1)
+                                   });
+                                    return obj.length > 0 ? obj[0].label: "";
+                             }
+                        },
+                    data: [{
+                        type: "column",
+                        indexLabelLineThickness: 1,
+                        dataPoints: choices.map(function(v, i){
+                            return {
+                                label: i+1,
+                                y: v.y
+                            };
+                        })
+
+                    }]
+                });
+                chart_{{ obj.poll.id }}.render();
+                var chart_{{ obj.poll.id}}{{ forloop.counter }} = new CanvasJS.Chart("chartContainer_{{ obj.poll.id}}{{ forloop.counter }}", {
+                    dataPointWidth: 60,
+                    data: [{
+                        type: "pie",
+                        showInLegend: true,
+                        toolTipContent: "{y} - #percent %",
+                        legendText: "{indexLabel}",
+                        indexLabelLineThickness: 2,
+                        dataPoints: [{% for choice in obj.choices %}
+                                        {% if choice.votes > 0 and forloop.counter < 6 %}
+                                            {indexLabel: "{{ choice.choice_text }}", y: {{ choice.votes }}},
+                                        {% endif %}
+                                    {% endfor %}]
+
+                    }]
+                });
+                chart_{{ obj.poll.id}}{{ forloop.counter }}.render();
+            {% endfor %}
+        }
+    </script>
+    <div class="body-container">
+        {% for obj in polls %}
+            <h1>{{ obj.poll.question }}</h1>
+            <div class="chart-container">
+                <h2>Top 10</h2>
+                <div id="chartContainer_{{ obj.poll.id }}" style="height: 500px; width: 100%; display: inline-block" ></div>
+            </div>
+            <div class="chart-container large">
+                <h2>Top 5</h2>
+                <div id="chartContainer_{{ obj.poll.id }}{{ forloop.counter }}" style="height: 500px; display: inline-block; width: 100%; "></div>
+            </div>
+            <div class="chart-container auto-height">
+            <table>
+                <tr>
+                    <th>Choice</th><th>No. of Votes</th>
+                </tr>
+                {% for choice in obj.choices %}
+                    <tr>
+                    <td>{{ choice.choice_text }}</td>
+                    <td>{{ choice.votes }}</td>
+                    </tr>
+                {% endfor %}
+            </table>
+        </div>
         {% endfor %}
-		}
-	</script>
-    {% for poll in polls %}
-    <div id="chartContainer_{{ poll.id }}" style="height: 300px; width: 40%; display: inline-block"></div>
-    {% endfor %}
-<script src="/static/canvasjs.min.js"></script>
-
+    </div>
+    <script src="/static/canvasjs.min.js"></script>
 
 
 

@@ -37,6 +37,14 @@ class ResultsView(generic.DetailView):
         return ctx
 
 
+def compare(item1, item2):
+    if item1.votes < item2.votes:
+        return -1
+    elif item1.votes > item2.votes:
+        return 1
+    else:
+        return 0
+
 class AllResultsView(generic.ListView):
     model = Poll
     template_name = 'polls/allresults.html'
@@ -44,6 +52,14 @@ class AllResultsView(generic.ListView):
 
     def get_context_data(self, **kwargs):
         ctx = super(AllResultsView, self).get_context_data()
+        polls = []
+        for poll in ctx['polls']:
+            polls.append({
+                'poll': poll,
+                'choices': sorted(poll.choice_set.all(), cmp=compare, reverse=True)
+            })
+
+        ctx['polls'] = polls
         # data=[]
         # poll = self.object_list.all()
         # for choice in poll.choice_set.all():

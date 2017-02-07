@@ -1,0 +1,89 @@
+/* ================================  Start Extra small devices (phones, up to 480px)  ================================*/
+@media screen and (max-width: 768px) {
+
+    .site-top {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9;
+        font-size: 12px;
+        height: 44px;
+        transition: all 0.5s ease;
+        background: #fff;
+    }
+
+    .nicobar-horizontal-logo-dark-mobile {
+        height: 14px;
+        width: 108px;
+        top: 16px;
+        position: relative;
+    }
+    .top-right-nav {
+        margin-top:14px;
+    }
+    .mobile-menu .navbar-toggle{
+        margin-top: 6px;
+        float: none;
+    }
+    .mobile-menu .icon-bar{
+        background: #b1b1b4;
+    }
+
+    footer h2 {
+        font-size: 24px;
+        letter-spacing: 0;
+    }
+
+    footer .link-nav li {
+
+    }
+
+    .bigRoundNext, .bigRoundPrev {
+        background: rgba(90, 4, 6, 0.4);
+        height: 80px;
+        top: 50%;
+        margin-top: -100px;
+        width: 40px;
+        font-size: 24px;
+        color: #fff;
+    }
+
+    .bigRoundNext {
+        border-radius: 40px 0 0 40px;
+        right:4px;
+    }
+
+    .bigRoundPrev {
+        border-radius: 0 40px 40px 0;
+        left:4px;
+    }
+
+    .bigRoundNext .cntrPos {
+        left: 20px;
+    }
+
+    .bigRoundPrev .cntrPos {
+        right: 20px;
+    }
+}
+
+/* ================================  End Extra small devices (phones, up to 480px)  ==================================*/
+/* ================================  Start Small devices (tablets, 768px and up)  ====================================*/
+@media (min-width: 769px) and (max-width: 991px) {
+
+}
+
+/* ================================  End Small devices (tablets, 768px and up)  ======================================*/
+/* ================================  Start tablets/desktops and up  ==================================================*/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* ================================  End tablets/desktops and up  ====================================================*/
+/* ================================  Start large desktops and up =====================================================*/
+@media screen and (min-width: 1200px) {
+
+}
+
+/* ================================  End large desktops and up =======================================================*/

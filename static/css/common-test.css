@@ -1,0 +1,610 @@
+body {
+    font-family: 'EuclidFlex', sans-serif;
+    margin-left: auto;
+    overflow-x: hidden;
+    letter-spacing: 1px;
+    font-size: 14px;
+    line-height: 1.43;
+}
+
+.np {
+    font-family: 'NewParis';
+}
+
+.img-responsive {
+    width: 100%;
+}
+
+.text-truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.container-fluid {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.row {
+    margin-left: -3px;
+    margin-right: -3px;
+}
+
+[class*='col-'] {
+    min-height: 1px;
+    padding-left: 3px;
+    padding-right: 3px;
+    position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    font-family: 'EuclidFlexBold';
+}
+
+h1.np, h2.np, h3.np, h4.np, h5.np, h6.np {
+    font-family: 'NewParis';
+}
+
+h3 {
+    font-size: 34px;
+}
+
+h2.np {
+    font-size: 42px;
+}
+
+h4.np {
+    font-size: 24px;
+}
+
+h6.np {
+    font-size: 12px;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+a, a:active, a:focus, button, button:focus, button:active, .btn, .btn:focus,
+.btn:active:focus, .btn.active:focus, .btn.focus, .btn.focus:active, .btn.active.focus {
+    outline: none;
+    outline: 0;
+    text-decoration: none !important;
+}
+
+input::-moz-focus-inner {
+    border: 0;
+}
+
+ul, li, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li, a {
+    display: inline-block;
+}
+
+p {
+    line-height: 1.46;
+}
+
+.voffset {
+    margin-top: 2px;
+}
+
+.voffset1 {
+    margin-top: 5px;
+}
+
+.voffset2 {
+    margin-top: 10px;
+}
+
+.voffset3 {
+    margin-top: 15px;
+}
+
+.voffset4 {
+    margin-top: 30px;
+}
+
+.voffset5 {
+    margin-top: 40px;
+}
+
+.voffset6 {
+    margin-top: 60px;
+}
+
+.voffset7 {
+    margin-top: 80px;
+}
+
+.voffset8 {
+    margin-top: 100px;
+}
+
+.voffset9 {
+    margin-top: 150px;
+}
+
+::-webkit-input-placeholder {
+    letter-spacing: 1px;
+}
+
+::-moz-placeholder {
+    letter-spacing: 1px;
+}
+
+:-ms-input-placeholder {
+    letter-spacing: 1px;
+}
+
+input:-moz-placeholder {
+    letter-spacing: 1px;
+}
+
+.img-full-width {
+    width: 100%;
+}
+
+.icon-bg {
+    display: inline-block;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.circle-icon {
+    height: 30px;
+    width: 30px;
+}
+
+.page-highlight-text {
+    padding: 50px 0 80px 0;
+}
+
+.padd-both60 {
+    padding: 60px 0;
+}
+
+.padd-60-dbl-one {
+    padding: 60px 0 30px 0;
+}
+
+.padd-60-one-dbl {
+    padding: 30px 0 60px 0;
+}
+
+.full-banner-bg {
+    background-size: 100%;
+    clear: both;
+}
+
+.btnlink {
+    padding: 15px 16px 5px 16px;
+    display: inline-block;
+}
+
+.trans-white {
+    border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+}
+
+.trans-white:hover {
+    color: #fff;
+}
+
+.white-bg {
+    border: 1px solid #000;
+    background: transparent;
+    color: #000;
+    font-family: 'EuclidFlexBold';
+}
+
+.white-bg:hover {
+    color: #000;
+}
+
+.fixed-layer {
+}
+
+.hideMe {
+    display: none;
+}
+
+.double-line-height {
+    line-height: 2;
+}
+
+.slate-trans-bg {
+    background: rgba(78, 95, 102, 0.94);
+}
+
+/*  =============================================  START CODE FOR HEADER STYLE HERE  ===================================  */
+.top-bar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    font-size: 12px;
+    height: 56px;
+    transition: all 0.5s ease;
+}
+
+.top-bar:hover {
+    background: #fff;
+}
+
+.top-nav-icon {
+    height: 20px;
+    width: 20px;
+    background-size: 18px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logo-pos {
+    position: fixed;
+    z-index: 999;
+}
+
+.nicobar-horizontal-logo-dark {
+    height: 18px;
+    left: 30px;
+    top: 21px;
+    width: 120px;
+}
+
+.nicobar-vertical-logo-dark {
+    height: 97px;
+    width: 62px;
+    top: 90px;
+    left: 60px;
+    position: fixed;
+}
+
+/*  ========================================  START CODE FOR MAIN NAVIGATION STYLE HERE  ===========================  */
+.nav-wrap a {
+    text-transform: uppercase;
+    margin: 0 30px;
+    color: #797a82;
+    height: 60px;
+    padding-top: 28px;
+    font-size: 11px;
+    font-family: 'EuclidFlexBold';
+    letter-spacing: 2px;
+}
+
+.nav-wrap a:hover {
+    color: #41424f;
+}
+
+.nav-wrap .highlight:before {
+    position: absolute;
+    content: '';
+}
+
+.nav-panel {
+    display: none;
+    width: 100%;
+    position: fixed;
+    background: rgba(253, 251, 248, 0.9);
+    left: 0;
+    top: 56px;
+    z-index: 10;
+    height: 50px;
+}
+
+.nav-panel a {
+    text-transform: none;
+}
+
+.nav-panel li a {
+    height: auto;
+    padding: 21px 0 10px 0;
+    font-family: 'EuclidFlexMed';
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin: 0;
+    width: 160px;
+    color: #41424f;
+}
+
+.nav-panel li a:hover {
+    background: rgba(253, 251, 248, 0.5);
+}
+
+.nav-panel .dropdown-menu {
+    font-size: 14px;
+    text-align: center;
+    border: 0;
+    padding: 10px 0 25px 0;
+    margin: 0;
+    background: rgba(253, 251, 248, 0.9);
+    width: 160px;
+    letter-spacing: 2px;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.nav-panel .dropdown-menu li {
+    float: left;
+    width: 100%;
+}
+
+.nav-panel .dropdown-menu a {
+    padding: 5px 0;
+    margin: 0;
+    color: #41424f;
+    height: auto;
+    font-family: 'newparis';
+}
+
+.nav-panel .dropdown-menu a:hover {
+    text-decoration: underline !important;
+    background: none;
+}
+
+/*  ========================================  END CODE FOR MAIN NAVIGATION STYLE HERE  =============================  */
+.inr-nav {
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.inr-nav .dropdown-menu {
+    border-radius: 0;
+    border: 0;
+    box-shadow: none;
+    background: #fafaf9;
+    min-width: inherit;
+    width: 105px;
+    padding: 10px 0 2px 0;
+    top: 27px;
+    left: -21px;
+}
+
+.inr-nav a, .inr-nav .dropdown-menu a {
+    font-family: 'EuclidFlexMed';
+    color: #797a82;
+    font-size: 11px;
+}
+
+.inr-nav a:hover, .inr-nav .dropdown-menu a:hover {
+    background: none;
+    color: #41424f;
+}
+
+.inr-nav .dropdown-menu li {
+    padding: 5px 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.top-right-nav {
+    margin-top: 21px;
+}
+
+.top-right-nav [class*="flaticon-"]::before,
+.top-right-nav [class*="flaticon-"]::after {
+    font-size: 14px;
+}
+
+.top-right-nav a {
+    color: #797a82;
+}
+
+.top-right-nav a:hover {
+    color: #41424f;
+}
+
+/*  =============================================  END CODE FOR HEADER STYLE HERE  =====================================  */
+/*  =============================================  START CODE SWIPER STYLE HERE  ===================================  */
+.swiperWrap {
+    position: relative;
+}
+
+.swiper-button-prev.swiper-button-disabled, .swiper-button-next.swiper-button-disabled {
+    /*opacity:0;*/
+}
+
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+    background-image: none;
+    left: 0;
+}
+
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+    background-image: none;
+    right: 0;
+}
+
+.bigRoundNext, .bigRoundPrev {
+    background: rgba(90, 4, 6, 0.4);
+    height: 100px;
+    top: 50%;
+    margin-top: -112px;
+    width: 50px;
+    font-size: 24px;
+    color: #fff;
+    background-image: none;
+}
+
+.bigRoundNext {
+    border-radius: 100px 0 0 100px;
+    right: 0px;
+}
+
+.bigRoundPrev {
+    border-radius: 0 100px 100px 0;
+    left: 0px;
+}
+
+.cntrPos {
+    position: absolute;
+    top: 50%;
+    margin-top: -25%; /*font-size:16px;*/
+}
+
+.bigRoundNext .cntrPos {
+    left: 25px;
+}
+
+.bigRoundPrev .cntrPos {
+    right: 25px;
+}
+
+.swiper-pagination {
+    position: relative;
+    z-index: 2;
+}
+
+.swiper-pagination span {
+    margin: 0 8px;
+}
+
+.swiper-pagination-bullet {
+    height: 12px;
+    width: 12px;
+    background: #d5d6d9;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background: #747881;
+}
+
+.swiper-slide .titleSmalLink {
+    display: block;
+    clear: both;
+    margin: 15px 0 10px 0;
+}
+
+.swiper-slide .price-show {
+    display: block;
+    clear: both;
+    margin: 10px 0 15px 0;
+    font-size: 11px;
+}
+
+/*  =============================================  END CODE SWIPER STYLE HERE  ===================================  */
+/*  =============================================  START CODE FOR FOOTER STYLE HERE  ===============================  */
+footer {
+    padding: 20px 0;
+    font-size: 12px;
+    color: #41424f;
+    font-family: 'EuclidFlexMed';
+}
+
+footer h2 {
+    font-size: 32px;
+    letter-spacing: 0;
+}
+
+footer h4 {
+    font-size: 14px;
+}
+
+footer h4 span {
+    font-family: 'EuclidFlexLgt';
+}
+
+.contact-icon li {
+    margin: 0 12px;
+}
+
+.footer-icon {
+    height: 50px;
+    width: 50px;
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.subscribe-me {
+    border-bottom: 3px solid;
+    padding-bottom: 3px;
+}
+
+.subscribe-me input {
+    border: 0;
+    width: 100%;
+}
+
+.subscribe-me input[type=email] {
+    border: 0;
+    padding: 2px 10px 0 10px;
+    font-size: 12px;
+    font-family: 'EuclidFlexLgt';
+    line-height: 2;
+    box-shadow: 0;
+    outline: 0;
+}
+
+.subscribe-me input[type=email]::-webkit-input-placeholder {
+    color: #b1b1b4;
+}
+
+.subscribe-me input[type=email]::-moz-placeholder {
+    color: #b1b1b4;
+}
+
+.subscribe-me input[type=email]:-ms-input-placeholder {
+    color: #b1b1b4;
+}
+
+.subscribe-me input[type=email] input:-moz-placeholder {
+    color: #b1b1b4;
+}
+
+.btn-subscribe-submit {
+    position: absolute;
+    top: 2px;
+    right: 8px;
+    height: 30px;
+    width: 30px;
+    background-size: 22px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+footer .link-nav li {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+footer .link-nav li:after {
+    content: "|";
+    font-family: 'EuclidFlexLgt';
+    margin: 0 5px 0 6px;
+}
+
+footer .link-nav li:last-child:after {
+    background: transparent;
+    content: "";
+}
+
+.fsm {
+    height: 30px;
+    width: 44px;
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.copyright {
+    font-size: 11px;
+    font-family: 'EuclidFlexLgt';
+}
+
+/*  =============================================  END CODE FOR FOOTER STYLE HERE  =====================================  */

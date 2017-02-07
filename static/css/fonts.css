@@ -1,0 +1,99 @@
+/* ==================================  START USING NEW PARIS FONTS HERE  =============================================*/
+@font-face {
+    font-family: 'newparisreg';
+    src: url('../fonts/NewParisText.eot');
+    src: url('../fonts/NewParisText.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/NewParisText.woff2') format('woff2'),
+    url('../fonts/NewParisText.woff') format('woff'),
+    url('../fonts/NewParisText.ttf') format('truetype'),
+    url('../fonts/NewParisText.svg#newparisreg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'newparis';
+    src: url('../fonts/newparistext-regular.eot');
+    src: url('../fonts/newparistext-regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/newparistext-regular.woff2') format('woff2'),
+    url('../fonts/newparistext-regular.woff') format('woff'),
+    url('../fonts/newparistext-regular.ttf') format('truetype'),
+    url('../fonts/newparistext-regular.svg#newparis') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'newparisMed';
+    src: url('../fonts/newparisheadline-medium.eot');
+    src: url('../fonts/newparisheadline-medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/newparisheadline-medium.woff2') format('woff2'),
+    url('../fonts/newparisheadline-medium.woff') format('woff'),
+    url('../fonts/newparisheadline-medium.ttf') format('truetype'),
+    url('../fonts/newparisheadline-medium.svg#newparisMed') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'newparisMedIlt';
+    src: url('../fonts/newparisheadline-mediumitalic.eot');
+    src: url('../fonts/newparisheadline-mediumitalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/newparisheadline-mediumitalic.woff2') format('woff2'),
+    url('../fonts/newparisheadline-mediumitalic.woff') format('woff'),
+    url('../fonts/newparisheadline-mediumitalic.ttf') format('truetype'),
+    url('../fonts/newparisheadline-mediumitalic.svg#newparisMedIlt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ==================================  END USING NEW PARIS FONTS HERE  ===============================================*/
+/* ==================================  START USING EUCLID FLEX FONTS HERE  ===========================================*/
+@font-face {
+    font-family: 'EuclidFlexLgt';
+    src: url('../fonts/euclidflex-light.eot');
+    src: url('../fonts/euclidflex-light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/euclidflex-light.woff2') format('woff2'),
+    url('../fonts/euclidflex-light.woff') format('woff'),
+    url('../fonts/euclidflex-light.ttf') format('truetype'),
+    url('../fonts/euclidflex-light.svg#EuclidFlexLgt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EuclidFlex';
+    src: url('../fonts/euclidflex-regular.eot');
+    src: url('../fonts/euclidflex-regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/euclidflex-regular.woff2') format('woff2'),
+    url('../fonts/euclidflex-regular.woff') format('woff'),
+    url('../fonts/euclidflex-regular.ttf') format('truetype'),
+    url('../fonts/euclidflex-regular.svg#EuclidFlex') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EuclidFlexMed';
+    src: url('../fonts/euclidflex-medium.eot');
+    src: url('../fonts/euclidflex-medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/euclidflex-medium.woff2') format('woff2'),
+    url('../fonts/euclidflex-medium.woff') format('woff'),
+    url('../fonts/euclidflex-medium.ttf') format('truetype'),
+    url('../fonts/euclidflex-medium.svg#EuclidFlexMed') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EuclidFlexBold';
+    src: url('../fonts/euclidflex-bold.eot');
+    src: url('../fonts/euclidflex-bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/euclidflex-bold.woff2') format('woff2'),
+    url('../fonts/euclidflex-bold.woff') format('woff'),
+    url('../fonts/euclidflex-bold.ttf') format('truetype'),
+    url('../fonts/euclidflex-bold.svg#EuclidFlexBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ==================================  END USING EUCLID FLEX FONTS HERE  =============================================*/

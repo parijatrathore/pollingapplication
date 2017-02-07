@@ -1,0 +1,125 @@
+body {
+    color: #282b30;
+}
+
+a {
+    color: #282b30;
+}
+
+/*  =========================================  START CODE FOR SHOP NAVIGATION STYLE HERE  ==========================  */
+.nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
+    background: none;
+}
+
+.navbar-nav > li > a {
+    color: #fff;
+}
+
+.navbar-nav > li > a:hover {
+    background: none;
+}
+
+.site-nav:hover {
+    background: #fff !important;
+}
+
+.header-freez .site-nav a, .site-nav:hover a {
+    color: #4e5f66 !important;
+}
+
+/*  =========================================  END CODE FOR SHOP NAVIGATION STYLE HERE  ============================  */
+/*  =============================================  START CODE FOR FOOTER STYLE HERE  ===============================  */
+.icon-cart {
+    background-image: url('../img/icon-cart-off.png');
+}
+
+.icon-cart:hover {
+    background-image: url('../img/icon-cart-on.png');
+}
+
+.icon-search {
+    background-image: url('../img/icon-search-off.png');
+}
+
+.icon-search:hover {
+    background-image: url('../img/icon-search-on.png');
+}
+
+.icon-wishlist {
+    background-image: url('../img/icon-heart-off.png');
+}
+
+.icon-wishlist:hover {
+    background-image: url('../img/icon-heart-on.png');
+}
+
+.icon-profile {
+    background-image: url('../img/icon-profile-off.png');
+}
+
+.icon-profile:hover {
+    background-image: url('../img/icon-profile-on.png');
+}
+
+.icon-phone {
+    background-image: url('../img/icon-phone.png');
+}
+
+.icon-chat {
+    background-image: url('../img/icon-chat.png');
+}
+
+.icon-mail {
+    background-image: url('../img/icon-mail.png');
+}
+
+.icon-mail2 {
+    background-image: url('../img/icon-mail_2.png');
+}
+
+.icon-facebook {
+    background-image: url('../img/icon-facebook.png');
+}
+
+.icon-instagram {
+    background-image: url('../img/icon-instagram.png');
+}
+
+.icon-twitter {
+    background-image: url('../img/icon-twitter.png');
+}
+
+.icon-pinterest {
+    background-image: url('../img/icon-pinterest.png');
+}
+
+.icon-youtube {
+    background-image: url('../img/icon-youtube.png');
+}
+
+.subscribe-me {
+    border-color: #41424f;
+}
+
+.subscribe-me input {
+    background: none;
+}
+
+.subscribe-me input[type=email] {
+    background: none;
+}
+
+.btn-subscribe-submit {
+    background-image: url('../img/right-circle-arrow.png');
+}
+
+footer {
+    background: #e7e7e7;
+    color: #41424f
+}
+
+footer a, a:hover, footer a:focus {
+    color: #41424f;
+}
+
+/*  =============================================  END CODE FOR FOOTER STYLE HERE  =================================  */

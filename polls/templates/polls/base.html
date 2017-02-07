@@ -1,2 +1,25 @@
+{% load staticfiles %}
+<html>
+<head>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/common.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.min.css' %}"/>
+</head>
+<body>
+<nav class="navbar pn-menu" role="navigation">
+    <div class="container-fluid top-bar change-nav"
+         style="background: rgb(255, 255, 255); transition: all 0.5s ease;">
+        <div class="row">
+            <img alt="" class="nicobar-horizontal-logo-dark logo-pos " src="//cdn.nicobar.com/static/svg/nicobar-horizontal-logo-dark.svg" style="display: inline;">
+            {% if polls %}
+                <a href="{% url 'detail' polls.0.poll.id %}" class="nav-link">Vote</a>
+            {% else %}
+                <a href="/" class="nav-link">Results</a>
+            {% endif %}
+        </div>
+    </div>
+</nav>
 {% block polls_content %}
 {% endblock %}
+</body>
+</html>

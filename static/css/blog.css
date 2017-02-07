@@ -1,0 +1,1113 @@
+/* ====================================  START CODE FOR COMMON STYLE HERE  ===========================================*/
+.header-title-dummy {
+    text-align: center;
+    display: block;
+    width: 100%;
+    padding: 10px 0 50px 0;
+    text-transform: uppercase;
+}
+
+.header-title-dummy h4 {
+    font-size: 14px;
+    color: #ccc;
+    font-family: 'EuclidFlexLgt';
+}
+
+.blog-banner {
+    height: 800px;
+}
+
+.fade-black-bg {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.top-banner-content {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    color: #fff;
+    padding-top: 200px;
+}
+
+.banner-text {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.blog-chevron {
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    background: url("../img/icon-chevron.png") no-repeat center;
+    background-size: 100%;
+    position: absolute;
+    left: 50%;
+    margin-left: -25px;
+    z-index: 2;
+    top: 180px;
+}
+
+.dotted-seperated {
+    background: url("../img/separator-dotted.png") repeat-x center;
+    display: block;
+    height: 15px;
+}
+
+.both-dotted-bg {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    position: relative;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.both-dotted-bg:before, .both-dotted-bg:after {
+    content: '';
+    position: absolute;
+    height: 12px;
+    width: 80px;
+    background: url("../img/separator-dotted.png") repeat-x center;
+}
+
+.both-dotted-bg:before {
+    margin-left: -94px;
+}
+
+.both-dotted-bg:after {
+    margin-left: 10px;
+}
+
+.swiper-slide {
+
+}
+
+.bg-white {
+    background: #fff;
+}
+
+.blog-post-wrap {
+    margin-bottom: 100px;
+}
+
+.blog-page-bottom-gap {
+    margin-bottom: 160px;
+}
+
+/* ====================================  END CODE FOR COMMON STYLE HERE  =============================================*/
+/*  =============================  START CODE FOR TOP FULL WIDTH BANNER WITH SLIDER HERE  ============================*/
+.blog-hero-slider {
+    background: #fefefe;
+    color: #fff;
+}
+
+.blog-hero-slider .swiper-container {
+    height: 600px;
+    margin-bottom: 20px;
+}
+
+.blog-hero-slider .swiper-pagination {
+    bottom: 10%;
+    position: absolute;
+}
+
+.blog-hero-slider .swiper-content {
+    height: 100%;
+    width: 100%;
+    padding-top: 250px;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    text-align: center;
+    overflow: hidden;
+    left: 0;
+}
+
+.blog-hero-slider h5 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    position: relative;
+}
+
+.blog-hero-slider h5:before, .blog-hero-slider h5:after {
+    content: '';
+    position: absolute;
+    height: 12px;
+    width: 80px;
+    background: url("../img/separator-dotted.png") repeat-x center;
+}
+
+.blog-hero-slider h5:before {
+    margin-left: -94px;
+}
+
+.blog-hero-slider h5:after {
+    margin-left: 10px;
+}
+
+.blog-hero-slider h2, .blog-hero-slider h3, .blog-hero-slider h5 {
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.gray-btn-link {
+    background: #868a92;
+    padding: 16px 0;
+    text-transform: uppercase;
+    display: inline;
+    color: #fff;
+    font-family: 'EuclidFlexBold';
+    letter-spacing: 2px;
+    margin: 20px auto;
+    width: 200px;
+}
+
+/*  =============================  END CODE FOR TOP FULL WIDTH BANNER WITH SLIDER HERE  ==============================*/
+/*  =============================  START CODE FOR BLOG NAVIGATION HERE  ==============================================*/
+.blog-nav {
+    -moz-box-shadow: inset 0 5px 5px -5px rgba(0, 0, 0, 0.1), inset 0 -5px 5px -5px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: inset 0 5px 5px -5px rgba(0, 0, 0, 0.1), inset 0 -5px 5px -5px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 5px 5px -5px rgba(0, 0, 0, 0.1), inset 0 -5px 5px -5px rgba(0, 0, 0, 0.1);
+    display: block;
+    padding: 2px 0;
+}
+
+.blog-nav.affix {
+    width: 100%;
+    top: 44px;
+}
+
+/*  =============================  END CODE FOR BLOG NAVIGATION HERE  ================================================*/
+/*  =============================  START CODE FOR TOP FULL WIDTH BANNER / WIDGET HERE  ===============================*/
+.bns-slider {
+    margin: 0 0 60px 0;
+    position: relative;
+}
+
+.bns-slider.blog-post-page {
+    margin-bottom: 0;
+}
+
+.bns-content {
+
+    width: 100%;
+    padding-top: 250px;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+}
+
+.bns-slider-wrap {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    bottom: -60px;
+    z-index: 8;
+    background: #fff;
+    padding: 0 60px;
+}
+
+.bns-swiper {
+    position: static;
+}
+
+.bns-swiper .swiper-slide a {
+    display: block;
+    width: 100%;
+    clear: both;
+}
+
+.bns-swiper .price-show {
+    margin: 10px 0 2px 0;
+}
+
+.bns-swiper .titleSmalLink {
+    margin-top: 30px;
+}
+
+.bns-swiper .swiper-hide-content {
+    display: none;
+    padding-top: 25px;
+}
+
+.bns-swiper .bns-next, .bns-swiper .bns-prev {
+    display: none;
+}
+
+.icon-blog-up {
+    position: absolute;
+    left: -39px;
+    bottom: -2px;
+    height: 30px;
+    width: 30px;
+    background: url("../img/icon-blog-up.png") no-repeat center;
+    background-size: 50%;
+}
+
+.icon-blog-wishlist, .icon-blog-cart {
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+}
+
+.icon-blog-wishlist {
+    background: url("../img/icon-heart-on.png") no-repeat center;
+    opacity: 0.6;
+    background-size: 20%;
+}
+
+.icon-blog-cart {
+    background: url("../img/icon-cart-on.png") no-repeat center;
+    opacity: 0.6;
+    background-size: 20%;
+}
+
+.icon-blog-wishlist:hover {
+    opacity: 1;
+}
+
+.icon-blog-cart:hover {
+    opacity: 1;
+}
+
+.mvp-swiper {
+    padding-bottom: 80px;
+}
+
+.mvp-swiper .swiper-slide {
+    width: 60%;
+}
+
+.mvp-swiper .swiper-slide:first-child {
+    width: 100%;
+}
+
+.mvp-swiper .mvp-next, .mvp-swiper .mvp-prev {
+    top: 40%;
+}
+
+.mvp-swiper .price-show {
+    margin: 10px 0 0 0;
+}
+
+.mvp-swiper .titleSmalLink {
+    margin-top: 3px;
+}
+
+.mvp-swiper .swiper-pagination {
+    bottom: -10px;
+}
+
+/*  =============================  END CODE FOR TOP FULL WIDTH BANNER / WIDGET HERE  =================================*/
+/*  =============================  START CODE FOR fmngs HERE  ========================================================*/
+.fmngs {
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.fmngs .swiper-slide {
+    height: 330px;
+    overflow: hidden;
+}
+
+.fmngs-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    left: 0;
+    padding-top: 150px;
+}
+
+.fmngs h4 {
+    font-size: 22px;
+    margin-top: 25px;
+    color: #fff;
+}
+
+.fmngs h5 {
+    font-size: 12px;
+}
+
+.fmngs h5:before, .fmngs h5:after {
+    content: '';
+    position: absolute;
+    height: 8px;
+    width: 60px;
+    background: url("../img/separator-dotted.png") repeat-x center;
+}
+
+.fmngs h5:before {
+    margin-left: -74px;
+}
+
+.fmngs h5:after {
+    margin-left: 10px;
+}
+
+.mdlRoundNext, .mdlRoundPrev {
+    background-color: rgba(181, 180, 179, 0.6);
+    background-image: none;
+    color: #fff;
+    height: 60px;
+    width: 30px;
+    margin-top: -32px;
+}
+
+.mdlRoundNext {
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 0;
+    right: 0;
+}
+
+.mdlRoundPrev {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 60px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 60px;
+    left: 0;
+}
+
+.mdlRoundNext .cntrPos, .mdlRoundPrev .cntrPos {
+    font-size: 18px;
+}
+
+.mdlRoundPrev .cntrPos {
+    left: 25%;
+}
+
+.mdlRoundNext .cntrPos {
+    right: 25%;
+}
+
+/*  =============================  END CODE FOR fmngs HERE  ==========================================================*/
+/*  =============================  START CODE FOR sia-swiper HERE  ===================================================*/
+.sia-swiper {
+    position: static;
+}
+
+.sia-swiper .swiper-slide a {
+    display: block;
+    width: 100%;
+    clear: both;
+}
+
+.arrow-next-swiper, .arrow-prev-swiper {
+    position: absolute;
+    height: 30px;
+    width: 40px;
+    top: 45%;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+.arrow-next-swiper {
+    right: -44px;
+    background: url("../img/icon-next.png") no-repeat center;
+}
+
+.arrow-prev-swiper {
+    left: -44px;
+    background: url("../img/icon-back.png") no-repeat center;
+}
+
+/*  =============================  END CODE FOR sia-swiper HERE  =====================================================*/
+/*  =============================  START CODE FOR BLOG CONTENT HERE  =================================================*/
+.blog-text-content {
+    font-size: 10px;
+    padding: 40px 0;
+}
+
+.border-top-bottom {
+    border-top: 1px solid #dddee0;
+    border-bottom: 1px solid #dddee0;
+}
+
+p.hightlight-med-text {
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: 'EuclidFlexLgt';
+    margin-bottom: 10px;
+}
+
+.blog-text-content h5 {
+    font-size: 18px;
+    font-family: 'EuclidFlexMed';
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+.blog-text-content ol li {
+    display: list-item;
+    list-style-type: decimal;
+    padding-left: 8px;
+    font-family: 'EuclidFlex';
+}
+
+.blog-text-content .list-text {
+    font-family: 'EuclidFlexBold';
+    color: #8f9194;
+}
+
+.num-list li {
+    margin-bottom: 20px;
+}
+
+h3.light-text {
+    font-family: 'newparis';
+    color: #8f9194;
+}
+
+/*  =============================  END CODE FOR BLOG CONTENT HERE  ===================================================*/
+/*  =============================  START CODE FOR mid post - products with description  ==============================*/
+.mpd .link-title {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.mpd .description {
+    color: #8f9194;
+    font-family: 'EuclidFlexMed';
+    margin-top: 12px;
+    line-height: 1.4;
+}
+
+.mpd .line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+/*  =============================  END CODE FOR mid post - products with description  ================================*/
+/*  =======================================  START CODE FOR BLOG LANDING PAGE  HERE  ===============================  */
+.blog-grid-section {
+
+}
+
+#blog-grid-section-tabs {
+    text-align: center;
+    border-bottom: 0px;
+}
+
+#blog-grid-section-tabs li {
+    display: inline-block;
+    float: inherit;
+    padding: 10px 25px;
+    border: 0px;
+    margin-left: -4px;
+
+    border-left: 1px solid #aeb1b6;
+    font-family: 'EuclidFlexBold';
+    font-size: 12px;
+}
+
+#blog-grid-section-tabs li:first-child {
+    border-left: 0px solid #aeb1b6;
+}
+
+#blog-grid-section-tabs li a {
+    color: #aeb1b6;
+}
+
+#blog-grid-section-tabs li.active a {
+    color: #282b30;
+}
+
+.most-popular-content, .most-resent-content {
+    margin: auto; /* center grid */
+    width: 100% !important;
+}
+
+.card {
+    width: 33.333%;
+    overflow: hidden;
+    opacity: 0; /* hide card while loading */
+}
+
+.card-wrapper {
+    margin: 0px 3px 3px 3px;
+}
+
+.card-wrapper a, .blog-catetory-section a {
+    display: block;
+}
+
+.card--loaded {
+    opacity: 1;
+}
+
+.card h3, .blog-catetory-section h5 {
+    font-family: 'EuclidFlexBold';
+    font-size: 13px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.card h3 img, .blog-catetory-section h3 img {
+    position: relative;
+    top: -1px;
+}
+
+.card h4, .blog-catetory-section h4 {
+    font-family: 'EuclidFlexBold';
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 28px;
+}
+
+.blog-catetory-section h2 {
+    font-family: 'newparis';
+    font-size: 24px;
+    color: #282b30;
+    line-height: 28px;
+    padding: 45px 0px;
+    text-align: center;
+
+}
+
+.blog-catetory-section h2 a {
+    display: inline-block;
+
+}
+
+.blog-category-banner {
+    position: relative;
+}
+
+.blog-category-banner-content {
+    top: 220px;
+    width: 450px;
+    position: absolute;
+    z-index: 10;
+    right: 10%;
+    color: #fff;
+    text-align: center;
+}
+
+.blog-category-banner-content h2 {
+    font-family: 'EuclidFlexBold';
+    font-size: 62px;
+    letter-spacing: 1px;
+    line-height: 80px;
+    margin-bottom: 10px;
+}
+
+.blog-category-banner-content p {
+    font-family: 'EuclidFlexMed';
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+
+.blog-category-banner-content h3 {
+    font-family: 'newparisMed';
+    font-size: 27px;
+    letter-spacing: 1px;
+    line-height: 21px;
+    margin-bottom: 57px;
+    color: #41424f;
+
+}
+
+.blog-category-banner .swiper-slide {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: cover;
+    height: 700px;
+}
+
+.blog-page-ending {
+
+    background: url("/static/img/icon-line.png") center center repeat-x;
+    padding: 70px 0px;
+    text-align: center;
+}
+
+.blog-page-ending div {
+
+    background: #fff;
+    display: inline-block;
+
+}
+
+.blog-page-ending div span {
+
+    padding: 0px 15px;
+    font-family: 'EuclidFlexBold';
+    font-size: 11px;
+    display: inline-block;
+
+}
+
+.blog-page-ending div span img {
+
+    padding: 0px 31px;
+
+}
+
+.blog-page-ending div span a {
+    display: block;
+
+}
+
+.blog-nav-bottom {
+    background: url("/static/img/icon-line.png") center center repeat-x;
+    padding: 70px 0px;
+    text-align: center;
+}
+
+.blog-nav-bottom img.divider-icon {
+    width: 84px;
+    padding: 0 10px;
+}
+
+.blog-nav-bottom [class*='col-'] {
+    background: #fff;
+}
+
+.blog-older-link, .blog-newer-link {
+    padding-top: 21px;
+}
+
+.blog-quote {
+    font-family: 'newparisMedIlt';
+}
+
+.blog-quote .hightlight-med-text {
+    font-family: 'newparisMedIlt';
+    font-size: 22px;
+    color: #41424f;
+}
+
+.blog-quote .hightlight-med-text:before {
+    content: '"';
+}
+
+.blog-quote .hightlight-med-text:after {
+    content: '"';
+}
+
+/*  =======================================  END CODE FOR BLOG LANDING  HERE  ===============================  */
+/*  =======================================  START CODE FOR JOURNAL PAGE HERE  ==============================  */
+.blog-featured-top-banner .fstlas {
+    margin-bottom: -20px;
+}
+
+.blog-featured-top-banner .swiper-slide {
+    position: relative;
+}
+
+.bftb-content-wrap {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.bftb-content-disp {
+    position: absolute;
+    text-align: center;
+    bottom: 60px;
+    right: 60px;
+    width: 47%;
+}
+
+.bftb-content-wrap h2 {
+    color: #fff;
+    font-size: 46px;
+    font-family: 'EuclidFlexBold';
+    margin-bottom: 12px;
+}
+
+.bftb-content-wrap p {
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.9;
+    font-family: 'EuclidFlexMed';
+}
+
+.bftb-content-wrap h4 {
+    font-size: 33px;
+    color: #fff;
+}
+
+.fstlas .swiper-pagination {
+    bottom: 40px;
+}
+
+.jatd-head .panel {
+    border-radius: 0;
+    box-shadow: none;
+    border: 0;
+    position: relative;
+    z-index: 10;
+    padding: 0;
+    margin: 0;
+    background: rgba(253, 251, 248, 1);
+}
+
+.jatd-head .panel-heading {
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+    border: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    position: relative;
+}
+
+.jatd-filter li a {
+    margin: 0 50px;
+    font-size: 13px;
+    font-family: "EuclidFlexMed";
+    color: #797a82;
+    display: inline-block;
+    padding: 18px 0 16px 0;
+    text-align: center;
+}
+
+.jatd-filter a:hover {
+    color: #282b30;
+}
+
+.jatd-filter .active a {
+    position: relative;
+    color: #282b30;
+}
+
+.jatd-filter .active a:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    left: 0;
+    bottom: 17px;
+    border-bottom: 1px solid #282b30;
+}
+
+.jatd-filter {
+    position: relative;
+}
+
+.jatd-mobile {
+    width: 102%;
+    text-align: center;
+    display: block;
+    background: #fff;
+    position: relative;
+    left: -1%;
+}
+
+.jatd-mobile li {
+    display: block;
+    width: 100%;
+}
+
+.jatd-mobile li a {
+    width: 100%;
+    text-align: center;
+    display: block;
+    background: #fff;
+    color: #797a82;
+    margin: 0;
+}
+
+.jatd-mobile li.active a:after {
+    border: 0;
+}
+
+#jat-txt {
+    display: inline-block;
+    font-family: "EuclidFlexBold";
+    color: #282b30;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+    padding: 18px 0 16px 0;
+}
+
+.jat-link {
+    position: relative;
+    background: #f1f1f1;
+    width: 100%;
+    display: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.001);
+
+}
+
+.active-text {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.active-text:before {
+    position: absolute;
+    left: 15px;
+    content: '';
+    top: 50%;
+    border: 5px solid transparent;
+    border-top: 5px solid #282b30;
+    margin-top: -2px;
+}
+
+.jatd-filter {
+    text-align: center;
+}
+
+.panel-body {
+    width: 100%;
+    margin: auto;
+}
+
+.jatd-container {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+
+    column-gap: 1px;
+    -webkit-column-gap: 1px;
+    -moz-column-gap: 1px;
+}
+
+.jatd-container .pin {
+    /*display: inline-block;
+    padding: 0 2px;
+    margin: 0;
+    -webkit-column-break-inside: avoid;
+    -moz-column-break-inside: avoid;
+    column-break-inside: avoid;
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    text-align: center;*/
+}
+
+.jatd-container .img-responsive {
+
+}
+
+.jatd-wrap {
+    position: relative;
+    vertical-align: middle;
+}
+
+.jatd-content-show {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    overflow: hidden;
+    /*padding-top: 42%;*/
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.jatd-content-show:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.jatd-content-show h5 {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "EuclidFlexBold";
+    font-size: 13px;
+    letter-spacing: 3px;
+    margin: 0;
+    position: inherit;
+}
+
+.jatd-content-show h5 span {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    display: inline-block;
+    padding-bottom: 2px;
+    margin-left: -2px;
+}
+
+.jatd-content-show h4 {
+    color: #fff;
+    font-family: "EuclidFlexBold";
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-top: 18px;
+}
+
+.container-fluid.jatd-head {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.jatd-head.affix-top {
+    position: relative;
+}
+
+.jatd-head.affix {
+    width: 100%;
+    padding: 0;
+    top: 55px;
+    left: 0;
+    position: fixed;
+    z-index: 99;
+}
+.jatd-head.fsbo-show.affix {
+    width: 100%;
+    padding: 0;
+    top: 75px;
+    left: 0;
+    position: fixed;
+    z-index: 99;
+}
+
+.jatd-head.affix-bottom {
+    width: 100%;
+    padding: 0;
+    top: 55px;
+    left: 0;
+    position: fixed;
+    z-index: 99;
+}
+
+.journal-loader {
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    z-index: 9999;
+    width: 40px;
+    height: 40px;
+    background: url('../img/30px@4secs.gif') no-repeat center;
+    margin-left: -20px;
+}
+
+.bftb-wrap {
+    position: relative;
+}
+
+.jatd-content-wrap {
+    position: relative;
+    top: 50%;
+    width: 100%;
+}
+
+.pinit {
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+
+    column-gap: 4px;
+    -webkit-column-gap: 4px;
+    -moz-column-gap: 4px;
+}
+
+.pinit .pin-panel {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    -webkit-column-break-inside: avoid;
+    -moz-column-break-inside: avoid;
+    column-break-inside: avoid;
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+#journalpinit {
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+}
+
+#journalpinit .journal-column {
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+#journalpinit .pinpanel {
+    position: relative;
+    margin: 2px 0 ;
+    margin-bottom: 4px;
+}
+
+.pp-wrap {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.pp-wrap:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.pp-cnt {
+    position: absolute;
+    left: 0;
+    top: 38%;
+    width: 100%;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.pp-cnt h5 {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "EuclidFlexBold";
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin: 0;
+}
+
+.pp-cnt h5 span {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    display: inline-block;
+    padding-bottom: 2px;
+    margin-left: -2px;
+}
+
+.pp-cnt h4 {
+    color: #fff;
+    font-family: "EuclidFlexBold";
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    margin-top: 18px;
+}
+
+/*  =======================================  END CODE FOR JOURNAL PAGE HERE  ================================  */
+
+.full-width-link {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

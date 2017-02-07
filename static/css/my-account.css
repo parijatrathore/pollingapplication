@@ -1,0 +1,861 @@
+/*  =======================================  START CODE FOR ACCOUNT PAGE  HERE  ===============================  */
+
+.account-page {
+    /*background: url('../../static/img/myaccount-banner.jpg') no-repeat center -105px fixed;
+    height: 250px;*/
+    position: relative;
+    top: -60px;
+
+}
+
+.base-account-page {
+    position: relative;
+    top: -60px;
+}
+
+.account-page .mail-info span {
+    font-size: 14px;
+    line-height: 24px;
+    color: #282b30;
+    font-family: 'EuclidFlexLgt';
+    letter-spacing: 1px;
+}
+
+.account-inner-wrap {
+    padding-top: 55px;
+}
+
+.account-page .fade-bg {
+    padding-top: 190px;
+}
+
+.tab-list li {
+    display: block;
+    margin-bottom: 27px;
+
+}
+
+.tab-list li.active a:after {
+    background: #282b30;
+    content: "";
+    position: absolute;
+    bottom: 4px;
+    width: 100%;
+    height: 1px;
+    left: 0;
+
+}
+
+.tab-list li a {
+    color: #282b30;
+    font-size: 11.5px;
+    letter-spacing: 1px;
+    line-height: 21px;
+    text-transform: uppercase;
+    font-family: 'NewParis';
+    position: relative;
+    display: inline-block;
+}
+
+.account-inner-tabing {
+    padding-top: 55px;
+    padding-bottom: 58px;
+}
+
+.account-head {
+    position: relative;
+}
+
+.account-head h4 {
+    font-family: 'EuclidFlexBold';
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    color: #282b30;
+    margin-bottom: 15px;
+}
+
+.account-head span {
+    font-family: 'EuclidFlexLgt';
+    font-size: 14px;
+    color: #282b30;
+    letter-spacing: 1px;
+    line-height: 24px;
+    padding-bottom: 18px;
+    display: block;
+}
+
+.tab-main-wrap {
+    width: 100%;
+}
+
+.account-head:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #d7d8da;
+    content: '';
+}
+
+.profile-form-info, .address-form-info {
+    padding-top: 32px;
+}
+
+/*
+.profile-form-info {
+    display: none;
+}
+*/
+
+.profile-form-info .form-control, .address-form-info .form-control, .new-form-info .form-control {
+
+    font-family: 'EuclidFlex';
+    background: #f9f9f6;
+    color: #282b30;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-size: 11px;
+    vertical-align: middle;
+}
+
+.profile-form-info .form-group, .address-form-info .form-group, .new-form-info .form-group {
+    margin-bottom: 24px;
+    position: relative;
+}
+
+.profile-form-info .form-control::-webkit-input-placeholder, .address-form-info .form-control::-webkit-input-placeholder, .new-form-info .form-control::-webkit-input-placeholder {
+    color: #282b30;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.profile-form-info .form-control:-moz-placeholder, .address-form-info .form-control:-moz-placeholder, .new-form-info .form-control:-moz-placeholder {
+    /* Firefox 18- */
+    color: #282b30;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.profile-form-info .form-control::-moz-placeholder, .address-form-info .form-control::-moz-placeholder, .new-form-info .form-control::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #282b30;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.profile-form-info .form-control:-ms-input-placeholder, .address-form-info .form-control:-ms-input-placeholder, .new-form-info .form-control:-ms-input-placeholder {
+    color: #282b30;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.change-password h6 {
+    font-family: 'EuclidFlexBold';
+    font-size: 12px;
+    line-height: 21px;
+    letter-spacing: 1px;
+    color: #282b30;
+    text-transform: uppercase;
+    padding-left: 4px;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+
+.change-password {
+    margin-top: 40px;
+}
+
+.check-news span {
+    width: 28px;
+    height: 28px;
+    border: 2px solid #000;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.check-news.after-check span {
+    background: url('../../static/img/icon-check-careers.png') center center no-repeat;
+
+}
+
+.check-news small {
+    font-family: 'EuclidFlexBold';
+    font-size: 13px;
+    line-height: 21px;
+    letter-spacing: 1px;
+    color: #282b30;
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 3px;
+    cursor: pointer;
+
+}
+
+#profile-form #profile_email {
+    text-transform: lowercase;
+}
+
+/*.change-pass-inner {*/
+/*display: none;*/
+/*}*/
+
+.subscribe-news {
+    margin-top: 19px;
+    margin-bottom: 25px;
+}
+
+.change-pass-inner {
+    margin-bottom: 28px;
+}
+
+.add-arrow-v {
+    width: 30px;
+    height: 73%;
+    background: #f9f9f6;
+    position: absolute;
+    top: 1px;
+    right: 2px;
+    display: block;
+    z-index: 9999;
+    pointer-events: none;
+}
+
+.add-arrow-v:after {
+    display: block;
+    border-right: 4px solid transparent;
+    border-top: 5px solid #000000;
+    border-bottom: 4px solid transparent;
+    border-left: 5px solid transparent;
+    content: "";
+    top: 18px;
+    position: absolute;
+}
+
+#add_country option:first-child {
+    display: none;
+}
+
+#add_country option {
+    font-size: 13px;
+}
+
+#address-store-btn {
+    margin-top: 30px;
+}
+
+.store-account-address, .profile-account-address {
+    padding: 18px 18px 14px 18px;
+    background: #f9f9f6;
+    min-height: 215px;
+    position: relative;
+    margin-bottom: 22px;
+    margin-top: 30px;
+}
+
+.store-account-address h6, .profile-account-address h6 {
+    font-family: 'EuclidFlexBold';
+    color: #282b30;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.edit-delete-acc, .edit-delete-acc1 {
+    position: absolute;
+    top: 7px;
+    right: 13px;
+}
+
+.edit-delete-acc span, .edit-delete-acc1 span {
+    font-family: 'EuclidFlex';
+    color: #282b30;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.edit-delete-acc span.delete {
+    padding-left: 9px;
+    position: relative;
+}
+
+.edit-delete-acc span.delete:after {
+    position: absolute;
+    top: 1px;
+    height: 72%;
+    width: 1px;
+    background: #282b30;
+    left: 3px;
+    content: '';
+}
+
+.store-account-address address, .profile-account-address address {
+    margin-left: 26.8%;
+    margin-top: 23px;
+    margin-bottom: 0;
+}
+
+.store-account-address address span, .store-account-address address a, .profile-account-address address span, .profile-account-address address a {
+    font-family: 'EuclidFlex';
+    display: block;
+    color: #282b30;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 1px;
+
+}
+
+.store-account-address address strong.client-name, .profile-account-address address strong.client-name {
+    font-family: 'EuclidFlexBold';
+    color: #282b30;
+    font-size: 13px;
+    line-height: 21px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+.client-email-id {
+    text-transform: lowercase !important;
+}
+
+input[type=email] {
+    text-transform: lowercase !important;
+}
+
+.add-profile-add {
+    display: block;
+    height: 60px;
+    border: 1px solid #afb2b6;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'EuclidFlexBold';
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    padding: 21px 10px;
+    color: #282b30;
+    margin-top: 18px;
+}
+
+.new-form-info {
+    padding-top: 10px;
+    background: #f9f9f6;
+    padding: 20px 18px 38px;
+    position: relative;
+    margin-top: 35px;
+}
+
+.new-form-info h6 {
+    font-family: 'EuclidFlexBold';
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 3px;
+    color: #282b30;
+    text-transform: uppercase;
+    padding-bottom: 40px;
+}
+
+.new-form-close {
+    position: absolute;
+    right: 18px;
+    top: 18px;
+    font-family: 'EuclidFlex';
+    color: #282b30;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.new-form-info .form-control {
+    background: #ffffff;
+    padding: 12px 18px;
+}
+
+#address-addnew-btn {
+    margin-top: 30px;
+    background: #afb2b6;
+}
+
+#address-addnew-btn:active, #address-addnew-btn:focus {
+    background: #282b30;
+}
+
+.profile-error-label, .add-error-label {
+    display: none;
+}
+
+.profile-errorshow, .add-error_show_label, .error-new-show {
+    font-family: 'EuclidFlexMed';
+    color: #d9677b;
+
+    letter-spacing: 1px;
+    font-size: 10px;
+    line-height: 8px;
+    display: block;
+    position: relative;
+    top: 8px;
+}
+
+.profile-form-info .form-control.profile-error_show, .address-form-info .form-control.add-error_show, #new-address-account .form-control.label-err_show {
+    border: 1px solid #cc909d;
+}
+
+.profile-form-info .form-control.profile-error_show.valid, .address-form-info .form-control.add-error_show.valid, #new-address-account .form-control.label-err_show.valid {
+    border: 1px solid transparent;
+}
+
+.profile-form-info .form-group .valid + span.profile-errorshow, .address-form-info .form-group .valid + span.add-error_show_label, .new-form-info, .error-new, #new-address-account .label-err_show.valid + .error-new-show {
+    display: none;
+}
+
+.purchase-wrap {
+    width: 100%;
+}
+
+.order-history {
+    overflow: hidden;
+    border-bottom: 1px solid #d7d8da;
+    margin-bottom: 50px;
+}
+
+.order-history li {
+    float: left;
+    width: 50%;
+    padding: 14px 50px;
+    position: relative;
+    text-align: center;
+
+}
+
+.order-history li a {
+    font-family: 'EuclidFlex';
+    color: #282b30;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 5px 0px;
+    position: relative;
+}
+
+.order-history li:before {
+    height: 65%;
+    width: 1px;
+    background: #d7d8da;
+    position: absolute;
+    top: 8px;
+    left: 0;
+    content: '';
+}
+
+.order-history li:first-child:before {
+    display: none;
+}
+
+.short-view-order h6 {
+    font-family: 'EuclidFlexBold';
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 2px;
+    color: #282b30;
+    text-transform: uppercase;
+}
+
+.ost-disp {
+    font-size: 10px;
+    text-transform: uppercase;
+    line-height: 1.15;
+    margin-bottom: 4px;
+}
+
+.order-date-info span{
+    font-family: 'EuclidFlexBold';
+    font-size: 12px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.order-num-info {
+    font-family: 'newparisMedIlt';
+    font-size: 18px;
+    margin-top: 14px;
+    margin-bottom: 2px;
+}
+
+.order-status-info span {
+    border-bottom: 1px solid #282b30;
+}
+
+.order-tab-content li {
+    display: block;
+
+}
+
+.order-1-info {
+    background: #f9f9f6;
+    padding: 21px 18px;
+    position: relative;
+    min-height: 153px;
+    margin-bottom: 7px;
+}
+
+.view-close {
+    position: absolute;
+    right: 21px;
+    top: 15px;
+}
+
+.view-close a {
+    font-family: 'EuclidFlexBold';
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 2px;
+    color: #282b30;
+    text-transform: uppercase;
+    display: block;
+}
+
+.view-close a.view-close-btn {
+    display: none;
+}
+
+.profile-account-address {
+    display: block;
+}
+
+.short-info {
+    margin-left: 107px;
+    margin-top: 8px;
+}
+
+.address-history-list {
+    padding: 0px 29px 22px;
+    display: none;
+}
+
+.bill-add-history {
+    padding-left: 80px;
+    border-top: 1px solid #d7d8da;
+    padding-top: 27px;
+    min-height: 181px;
+}
+
+.short-view-order {
+    margin-bottom: 25px;
+}
+
+.bill-add-history h6 {
+    font-family: 'EuclidFlex';
+    color: #282b30;
+    font-size: 11px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+}
+
+.bill-add-history address .client-name, .bill-add-history address span, .bill-add-history address a {
+    font-family: 'EuclidFlexBold';
+    color: #282b30;
+    font-size: 13px;
+    line-height: 21px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    display: block;
+
+}
+
+.bill-add-history address span, .bill-add-history address a {
+    font-family: 'EuclidFlex';
+    display: block;
+    color: #282b30;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+.purchase-product-list {
+    padding-left: 80px;
+    border-top: 1px solid #d7d8da;
+    padding-top: 27px;
+
+}
+
+.purchase-list-wrap {
+    background: #ffffff;
+    padding: 18px 20px 19px;
+    margin-bottom: 7px;
+}
+
+.purchase-list-wrap figure {
+    float: left;
+    width: 80px;
+    margin-right: 24px;
+}
+
+.purchase-description {
+    float: left;
+    width: 62%;
+    padding-top: 16px;
+}
+
+.purchase-description > span {
+    font-family: 'EuclidFlex';
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    color: #282b30;
+    display: block;
+}
+
+.purchase-description .buy-price {
+    line-height: 16px;
+
+}
+
+.purchase-description .buy-size, .purchase-description .buy-qty {
+    font-family: 'EuclidFlex';
+    letter-spacing: 2px;
+    font-size: 11px;
+}
+
+.purchase-description .buy-size span, .purchase-description .buy-qty span {
+    font-family: 'EuclidFlexLgt';
+    font-size: 11px;
+}
+
+.purchase-description .buy-size {
+    padding-top: 16px;
+}
+
+.order-history li.active a:after {
+    background: #282b30;
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    height: 1px;
+    left: 0;
+}
+
+.order-route-status li {
+    font-family: 'EuclidFlex';
+    font-size: 11px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    color: #282b30;
+    text-transform: uppercase;
+    padding-bottom: 24px;
+    position: relative;
+}
+
+.order-route-status {
+    padding-top: 29px;
+}
+
+.order-route-status ul {
+    position: relative;
+    margin-left: 40px;
+}
+
+.order-route-status ul:after {
+    content: '';
+    height: 80%;
+    width: 1px;
+    background: #778592;
+    position: absolute;
+    left: -36px;
+    top: 3px;
+}
+
+.order-route-status li:after {
+    position: absolute;
+    top: 2px;
+    left: -41px;
+    width: 11px;
+    height: 11px;
+    border: 1px solid #778592;
+    content: '';
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background: #f9f9f6;
+    z-index: 9;
+
+}
+
+.order-route-status li.active:after {
+    background: #282b30 url('../../static/img/tick.png') right 1px no-repeat;
+}
+
+.tab-content-info {
+    width: 62%;
+}
+
+.tab-content-info > li {
+    width: 100%;
+    min-height: 600px;
+}
+
+#form-address-account .bootstrap-select > .dropdown-toggle, #new-address-account .bootstrap-select > .dropdown-toggle, #add-contact .bootstrap-select > .dropdown-toggle, .address-info-main .bootstrap-select > .dropdown-toggle {
+    border: none;
+    background: transparent;
+}
+
+#new-address-account .bootstrap-select > .dropdown-toggle, #add-contact .bootstrap-select > .dropdown-toggle, .address-info-main .bootstrap-select > .dropdown-toggle {
+    padding-left: 18px;
+}
+
+#form-address-account .btn-group.open .dropdown-toggle, #new-address-account .btn-group.open .dropdown-toggle, #add-contact .btn-group.open .dropdown-toggle, .address-info-main .btn-group.open .dropdown-toggle {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+#form-address-account .filter-option, #new-address-account .filter-option, #add-contact .filter-option, .address-info-main .filter-option {
+    font-family: 'EuclidFlex';
+    background: none;
+    color: #282b30;
+    letter-spacing: 1px;
+    font-size: 11px;
+    vertical-align: middle;
+
+}
+
+#form-address-account .bootstrap-select.btn-group .dropdown-menu li, #new-address-account .bootstrap-select.btn-group .dropdown-menu li, #add-contact .bootstrap-select.btn-group .dropdown-menu li, .address-info-main .bootstrap-select.btn-group .dropdown-menu li {
+    display: block;
+}
+
+#form-address-account .bootstrap-select.btn-group .dropdown-menu, #new-address-account .bootstrap-select.btn-group .dropdown-menu, #add-contact .bootstrap-select.btn-group .dropdown-menu, .address-info-main .bootstrap-select.btn-group .dropdown-menu {
+    padding-top: 0;
+    padding-bottom: 0;
+    border: none;
+    -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05);
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    margin-top: 1px;
+}
+
+#form-address-account .bootstrap-select.btn-group .dropdown-menu li a span.text, #new-address-account .bootstrap-select.btn-group .dropdown-menu li a span.text, #add-contact .bootstrap-select.btn-group .dropdown-menu li a span.text, .address-info-main .bootstrap-select.btn-group .dropdown-menu li a span.text {
+    font-family: 'EuclidFlex';
+    color: #282b30;
+    letter-spacing: 1px;
+
+}
+
+#new-address-account .bootstrap-select.btn-group .dropdown-menu li a, #add-contact .bootstrap-select.btn-group .dropdown-menu li a, .address-info-main .bootstrap-select.btn-group .dropdown-menu li a {
+    padding-left: 18px;
+}
+
+.bootstrap-select.btn-group .dropdown-toggle .caret {
+    right: 20px !important;
+    display: block !important;
+    border-top: 4px solid #282b30;
+}
+
+.open > .dropdown-toggle.btn-default:hover, .open > .dropdown-toggle.btn-default:focus {
+    background: none;
+    border: none;
+}
+
+.gray-box-bg .btn, .gray-box-bg .btn:hover, .gray-box-bg .btn:active, .gray-box-bg .btn:focus, .gray-box-bg .btn-group.open .dropdown-toggle {
+    background: #f9f9f6 !important;
+}
+
+#address-addnew-btn {
+    color: #ffffff;
+}
+
+.mobile-select {
+    display: none;
+}
+
+.select-normal .btn span.filter-option {
+
+}
+
+.select-normal .btn span.text {
+
+}
+
+.pull-left {
+    float: none;
+    text-align: left !important;
+    margin-left: 25px;
+
+}
+
+.bootstrap-select.btn-group .dropdown-toggle .caret {
+    left: auto;
+}
+
+.bootstrap-select.btn-group .dropdown-menu li a {
+    text-align: left;
+    font-size: 11px;
+}
+
+/*  =======================================  END CODE FOR ACCOUNT PAGE  HERE  ===============================  */
+.custom-checkbox {
+    position: relative;
+}
+
+.checkbox-custom {
+    opacity: 0;
+    position: absolute;
+}
+
+.checkbox-custom, .checkbox-custom-label {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.checkbox-custom-label {
+    position: relative;
+}
+
+.checkbox-custom + .checkbox-custom-label:before {
+    content: '';
+    background: #fff;
+    border: 2px solid #000;
+    display: inline-block;
+    vertical-align: middle;
+    width: 28px;
+    height: 28px;
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 12px;
+    cursor: pointer;
+    text-align: center;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.checkbox-custom:checked + .checkbox-custom-label:before {
+    background: url('../../static/img/icon-check-careers.png') center center no-repeat;
+}
+
+.checkbox-custom:focus + .checkbox-custom-label {
+    outline: 1px solid transparent;
+}
+
+

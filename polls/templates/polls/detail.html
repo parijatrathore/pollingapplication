@@ -1,16 +1,23 @@
 {% extends 'polls/base.html' %}
 
+
 {% block polls_content %}
-<h1>{{ poll.question }}</h1>
+<div class="body-container">
+    <h1>{{ poll.question }}</h1>
 
-{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+    {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
 
-<form action="{% url 'vote' poll.id %}" method="post">
-{% csrf_token %}
-{% for choice in poll.choice_set.all %}
-    <input type="checkbox" name="choice[]" id="choice{{ forloop.counter }}" value="{{ choice.id }}" />
-    <label for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label><br />
-{% endfor %}
-<input type="submit" value="Vote" />
-</form>
-{% endblock %}
+    <div class="chart-container auto-height">
+        <form action="{% url 'vote' poll.id %}" method="post">
+        {% csrf_token %}
+        {% for choice in poll.choice_set.all %}
+            <input type="checkbox" class="checkbox-input" name="choice[]" id="choice{{ forloop.counter }}" value="{{ choice.id }}" />
+            <label for="choice{{ forloop.counter }}" class="checkbox-label"><span class="checkbox-span"></span>{{ choice.choice_text }}</label><br />
+        {% endfor %}
+            <br/>
+        <input type="submit" value="Vote" class="submit-button"/>
+        </form>
+        {% endblock %}
+
+    </div>
+</div>

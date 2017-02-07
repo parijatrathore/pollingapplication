@@ -1,0 +1,180 @@
+/*.video-container {
+    width: 100%;
+    position: relative;
+}*/
+.video-container {
+    width: 100%;
+    height: 100%;
+}
+video{
+    width: 100%;
+    height: auto;
+}
+
+.video-control {
+    display: none;
+}
+.control {
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+    height: 54px;
+    padding: 0 25px 0 20px;
+    z-index: 9999;
+}
+
+.btmControl {
+    clear: both;
+    position: relative;
+    top:10px;
+}
+
+.control div.video-btn {
+    float: left;
+    width: 34px;
+    height: 34px;
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+.control div.text {
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 30px;
+    text-align: center;
+    width: 20px;
+    border: none;
+    color: #777;
+}
+
+.control .btnPlay {
+    background: url(../img/icon-pause-white.png) no-repeat center;
+    background-size: 50%;
+}
+
+.control .paused {
+    background: url(../img/icon-play2-white.png) no-repeat center;
+    background-size: 50%;
+}
+
+.control .btnStop {
+    background: url(../img/icon-pause-white.png) no-repeat center;
+    background-size: 50%;
+}
+
+.control div.spdText {
+    border: none;
+    font-size: 14px;
+    line-height: 30px;
+    font-style: italic;
+}
+
+.control div.selected {
+    font-size: 15px;
+    color: #ccc;
+}
+
+.control div.sound, .customVideoControls div.sound {
+    background: url(../img/icon-volume-white.png) no-repeat center;
+    background-size: 50%;
+    border: none;
+    float: right;
+    height: 32px;
+    width: 32px;
+}
+
+.control div.sound2, .customVideoControls div.sound2 {
+    background: url(../img/icon-volume-white.png) no-repeat center;
+    background-size: 50%;
+}
+
+.control div.muted, .customVideoControls div.muted {
+    background: url(../img/icon-mute-white.png) no-repeat center;
+    background-size: 50%;
+}
+
+.control div.btnFS {
+    background: url(../img/control.png) no-repeat -44px 0;
+    float: right;
+}
+
+.control div.btnLight {
+    background: url(../img/control.png) no-repeat -44px -60px;
+    float: right;
+}
+
+.control div.lighton {
+    background: url(../img/control.png) no-repeat -44px -30px !important;
+}
+
+.topControl {
+    background: rgba(256, 256, 256, 0.4);
+    height: 1px;
+    position: relative;
+}
+
+.control .progress {
+    height:6px;
+    position: absolute;
+    float: left;
+    cursor: pointer;
+    background: none;
+    padding: 0;
+    border-radius: 0;
+    top:-3px;
+    width: 100%;
+    background: transparent;
+}
+
+.progress .timeBar {
+    height: 3px;
+    position: absolute;
+    top: 2px;
+    left: 0;
+    display: block;
+    background: #fff;
+}
+
+.timeBar {
+    z-index: 10;
+    width: 0;
+}
+
+.bufferBar {
+    z-index: 5;
+    width: 0;
+    background: #fff;
+    height: 1px;
+}
+
+.time {
+    width: 15%;
+    float: left;
+    text-align: left;
+    font-size: 11px;
+    line-height: 12px;
+    margin: 11px 0 0 15px;
+}
+
+.volume {
+    position: relative;
+    cursor: pointer;
+    width: 70px;
+    height: 10px;
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.volumeBar {
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #eee;
+    z-index: 10;
+}
